@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LESSON 8: HTML GRAPHICS</title>
+    <link rel="stylesheet" href="lesson8.css">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 10px 0px;
+}
+.navbar ul li{
+    font-family: century;
+    font-size: 0.90xrem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 20px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+/* Lesson 8 */
+#lesson8{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.836);
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    position: center;
+    color: white;
+}
+.lesson8 p{
+    font-size: 2rem;
+    text-align: left;
+}
+.headings{
+    font-family: century;
+    font-size: 3rem;
+    text-align: left;
+    margin: 40px 0px;
+}
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color:black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15 white;
+    font-weight: bold;
+}
+
+/* About Section */
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+   
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 900px;
+    height: 400px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+#intro h2{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+</style>
+<body>
+    <nav class="navbar"> 
+        <ul>
+            <li><a href="educ.html">Home</a></li>
+            <li><a href="lesson.html">LESSON 1</a></li>
+            <li><a href="lesson2.html">LESSON 2</a></li>
+            <li><a href="lesson3.html">LESSON 3</a></li>
+            <li><a href="lesson4.html">LESSON 4</a></li>
+            <li><a href="lesson5.html">LESSON 5</a></li>
+            <li><a href="lesson6.html">LESSON 6</a></li>
+            <li><a href="lesson7.html">LESSON 7</a></li>
+            <li><a href="lesson8.html">LESSON 8</a></li>
+            <li><a href="lesson9.html">LESSON 9</a></li>
+            <li><a href="lesson10.html">LESSON 10</a></li>
+        </ul>
+    </nav>
+
+    <section id="lesson8">
+        <div class="main">
+            <h1 class="headings">HTML CANVAS GRAPHICS<br></h1>
+           
+        </div>
+    </section>
+
+    <section id="about">
+        <h1 class="headings">What is HTML Canvas?</h1>
+       
+            <div id="pic">
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/306774597_5442366029146221_268174042187451441_n.png?_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_eui2=AeGpbHCes_n-RasrY71PBOCxEu9fbnIp8IQS719ucinwhNvN8lfvSudhWCCV4MQH6tx2otovHiJi7WNOUmzPaEcj&_nc_ohc=sl5mNtYuuWUAX-tBqJe&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQM1zywWL_HGwJ45M8HbpAgVjiZoecRXtI38kYVNGKw-g&oe=6374D66B" alt="">
+                
+            </div><br> <hr>
+
+            <h1 class="headings">Browser Support</h1>
+            <div id="pic">
+                <img src="https://scontent.fmnl3-1.fna.fbcdn.net/v/t1.15752-9/310273432_856950008666635_4606535679797067805_n.png?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeGOb0b6i12yJ5YhZXk9ZoSRjuxB2iHxpz6O7EHaIfGnPuOkk10j3x1tw-HKHsdi4uxC9nEiYtsweW8oLLTOXHyq&_nc_ohc=e8KWx4vsnhEAX8R_da-&_nc_ht=scontent.fmnl3-1.fna&oh=03_AdTGVsAun-Uj1nsUHM4Dbu03L-UftoMnZrDHv_yaEm19uw&oe=63775B18" alt="">
+                
+            </div><br> <hr>
+
+            
+            <h1 class="headings">Canvas Example</h1>
+            <div id="pic">
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/300427526_778743693223924_2014136876765264000_n.png?_nc_cat=109&ccb=1-7&_nc_sid=aee45a&_nc_eui2=AeEoq6i5UD_1h6V0ZcD_NaBVJRStGZ2Zb9glFK0ZnZlv2BgrR8kidD0BZewINJO474BNNjQSzQyQVjTHn2K22yZq&_nc_ohc=-3Y_yGIsQlcAX_ITFWL&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQt3JNIPwFeIf7Eu2ubnY1NSmndbV_vDQL3ZtZZsYTdbA&oe=6373A613" alt="">
+                
+            </div><br> <hr>
+        </div>
+    </section>
+       
+    
+</body>
+</html>

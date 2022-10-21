@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="aboutmestyle.css">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.836);
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#home::before{
+    content: "";
+    position: center;
+    top: 0;
+    right: 0;
+    background: url(images/img.jpg) no-repeat center center/cover;
+    height: 450px;
+    width: 450px;
+    z-index: 1;
+    opacity: .8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+   /* border: 1px solid white; */
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 5%;
+}
+.headings{
+    font-family: century;
+    font-size: 2rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color:black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15 white;
+    font-weight: bold;
+}
+
+/* About Section */
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+   
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 500px;
+    height: 350px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Education Section */
+#education{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    align-items: center;
+    padding: 20px;
+}
+.educ{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    text-align: justify;
+    padding: 10px;
+    color: black;
+}
+/*Contact Section*/
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 30px 0px;
+    background-color: rgba(0,0,0,0.9);
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 50%;
+    border: none;
+    outline: none;
+}
+#msg{
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    margin: 20px;
+    border: none;
+    outline: none;
+    
+}
+#send{
+    padding: 10px;
+    width: 10%;
+    margin: 40px;
+    border: none;
+    outline: none;
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
+</style>
+<body>
+    <nav class="navbar"> 
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="main">
+            <h1 class="headings">I AM <br> PAMELA GOROSPE</h1>
+            <button class="btn">
+                Hire Me
+            </button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h1 class="headings">ABOUT ME</h1>
+        <div id="pic">
+            <img src="images/img.jpg" alt="">
+            <div id="intro">
+                <h2>PAMELA ANNE D. GOROSPE</h2>
+                <p>Being a public servant and handled leadership in long run, I embraced the qualities, duties, and responsibilities such as being 
+                    mindful, understanding, and being an inspiration to others.</p>
+            </div>
+        </div>
+    </section>
+       
+    <section id="education">
+        <h1 class="headings">EDUCATION</h1>
+        <div id="educ">
+            <hr>
+        <table>
+            <tr>
+                <td>
+                <h3>Tertiary Education</h3> 
+            </td>
+            <td>
+                <p></p>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>2020-Present</h3>
+                </td>
+                <td>
+                    <p>Technological University of the Philippines Manila Campus</p>
+                 </td>
+            </tr>
+            <tr>
+                <td> <br>
+                   <h3>Secondary Education</h3>
+                </td>
+                <td>
+                    <p></p>
+                 </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>2018-2020</h3>
+                    </td>
+                    <td>  
+                        <p>Pasay City North High School M. Dela Cruz Campus
+                      <br> Senior High School </p>
+                     </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>2014-2018</h3>
+                        </td>
+                        <td>  
+                            <p>Pasay City North High School M. Dela Cruz Campus
+                          <br> Junior High School </p>
+                         </td>
+                    </tr>
+                    <tr>
+                        <td><br>
+                           <h3>Primary Education</h3>
+                        </td>
+                        <td>
+                            <p></p>
+                         </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>2008-2014</h3>
+                            </td>
+                            <td>  
+                                <p>Hen. Pio Del Pilar Elementary School </p>
+                             </td>
+                        </tr>
+        </table>
+    </section>
+ 
+   <section id="contact">
+    <h1 class="headings">CONTACT</h1>
+    <form action="" class="form">
+        <input type="text" name="name" class="input" placeholder="Enter Your Name">
+        <input type="email" name="email" class="input" placeholder="Enter Your Email">
+        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+        <input type="submit" value="SEND" id="send">
+    </form>
+   </section> 
+</body>
+</html>

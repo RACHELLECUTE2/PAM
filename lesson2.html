@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LESSON 2: HTML EDITORS</title>
+    <link rel="stylesheet" href="lesson2.css">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 10px 0px;
+}
+.navbar ul li{
+    font-family: century;
+    font-size: 0.90xrem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 20px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+/* Lesson 2 */
+#lesson2{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.836);
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    position: center;
+    color: white;
+}
+.lesson2 p{
+    font-size: 2rem;
+    text-align: left;
+}
+.headings{
+    font-family: century;
+    font-size: 3rem;
+    text-align: left;
+    margin: 40px 0px;
+}
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color:black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15 white;
+    font-weight: bold;
+}
+
+/* About Section */
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+   
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 800px;
+    height: 350px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+#intro h2{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+</style>
+<body>
+    <nav class="navbar"> 
+        <ul>
+            <li><a href="educ.html">Home</a></li>
+            <li><a href="lesson.html">LESSON 1</a></li>
+            <li><a href="lesson2.html">LESSON 2</a></li>
+            <li><a href="lesson3.html">LESSON 3</a></li>
+            <li><a href="lesson4.html">LESSON 4</a></li>
+            <li><a href="lesson5.html">LESSON 5</a></li>
+            <li><a href="lesson6.html">LESSON 6</a></li>
+            <li><a href="lesson7.html">LESSON 7</a></li>
+            <li><a href="lesson8.html">LESSON 8</a></li>
+            <li><a href="lesson9.html">LESSON 9</a></li>
+            <li><a href="lesson10.html">LESSON 10</a></li>
+        </ul>
+    </nav>
+
+    <section id="lesson2">
+        <div class="main">
+            <h1 class="headings">HTML EDITORS<br></h1>
+           <p class="lesson2"> A simple text editor is all you need to learn HTML. <br>
+        
+        </div>
+    </section>
+
+    <section id="about">
+        <h1 class="headings">Learn HTML Using Notepad or TextEdit</h1>
+        <p class="about">Web pages can be created and modified by using professional HTML editors. <br> 
+           <br> However, for learning HTML we recommend a simple text editor like Notepad (PC) or TextEdit (Mac). <br>
+          <br>  We believe that using a simple text editor is a good way to learn HTML.<br>
+           <br> Follow the steps below to create your first web page with Notepad or TextEdit.</p> <br> <hr>
+        
+           <h1 class="headings">Step 1: Open Notepad (PC)</h1>
+           <p class="about">
+            <h1>Windows 8 or later:</h1> 
+             <br> Open the Start Screen (the window symbol at the bottom left on your screen). Type Notepad. 
+           <br> <br>
+            <h2>Windows 7 or earlier:</h2>
+          <br> Open Start > Programs > Accessories > Notepad </p>  <br> <hr>
+
+          <h1 class="headings">Step 2: Write Some HTML"</h1>
+            <div id="pic">
+                <img src="https://www.w3schools.com/html/img_notepad.png" alt="">
+                <div id="intro">
+                    <p>Write or copy the following HTML code into Notepad:</p>
+                </div>
+            </div></p> <br> <hr>
+          
+             <h1 class="headings">Step 3: Save the HTML Page</h1>
+             <p class="about">
+                Save the file on your computer. Select File > Save as in the Notepad menu.   <br> <br>
+               Name the file "index.htm" and set the encoding to UTF-8 (which is the preferred encoding for HTML files).
+             <br> <br>
+             <div id="pic">
+                <img src="https://www.w3schools.com/html/img_saveas.png" alt=""> </div> <br><hr>
+  
+                <h1 class="headings">Step 4: View the HTML Page in Your Browser</h1>
+                <p class="about">
+                    Open the saved HTML file in your favorite browser (double click on the file, or right-click - and choose "Open with").  <br> <br>
+                    The result will look much like this:
+                <br> <br>
+                <div id="pic">
+                   <img src="https://www.w3schools.com/html/img_chrome.png" alt=""> </div> <br><hr>
+        </div>
+    </section>
+       
+    
+</body>
+</html>

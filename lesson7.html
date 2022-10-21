@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LESSON 7: HTML FORMS ATTRIBUTES</title>
+    <link rel="stylesheet" href="lesson7.css">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 10px 0px;
+}
+.navbar ul li{
+    font-family: century;
+    font-size: 0.90xrem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 20px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+/* Lesson 7 */
+#lesson7{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.836);
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    position: center;
+    color: white;
+}
+.lesson7 p{
+    font-size: 2rem;
+    text-align: left;
+}
+.headings{
+    font-family: century;
+    font-size: 3rem;
+    text-align: left;
+    margin: 40px 0px;
+}
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color:black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15 white;
+    font-weight: bold;
+}
+
+/* About Section */
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+   
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 900px;
+    height: 400px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+#intro h2{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+</style>
+<body>
+    <nav class="navbar"> 
+        <ul>
+            <li><a href="educ.html">Home</a></li>
+            <li><a href="lesson.html">LESSON 1</a></li>
+            <li><a href="lesson2.html">LESSON 2</a></li>
+            <li><a href="lesson3.html">LESSON 3</a></li>
+            <li><a href="lesson4.html">LESSON 4</a></li>
+            <li><a href="lesson5.html">LESSON 5</a></li>
+            <li><a href="lesson6.html">LESSON 6</a></li>
+            <li><a href="lesson7.html">LESSON 7</a></li>
+            <li><a href="lesson8.html">LESSON 8</a></li>
+            <li><a href="lesson9.html">LESSON 9</a></li>
+            <li><a href="lesson10.html">LESSON 10</a></li>
+        </ul>
+    </nav>
+
+    <section id="lesson7">
+        <div class="main">
+            <h1 class="headings">HTML FORM ATTRIBUTES<br></h1>
+           
+        </div>
+    </section>
+
+    <section id="about">
+        <h1 class="headings">The Action Attribute</h1>
+        <p class="lesson7">The action attribute defines the action to be performed when the form is submitted. <br> <br>
+
+            <br> <br> Usually, the form data is sent to a file on the server when the user clicks on the submit button.
+            <br> <br> In the example below, the form data is sent to a file called "action_page.php". This file contains a server-side script that handles the form data:</p> <br>
+            <div id="pic">
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/306774597_5442366029146221_268174042187451441_n.png?_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_eui2=AeGpbHCes_n-RasrY71PBOCxEu9fbnIp8IQS719ucinwhNvN8lfvSudhWCCV4MQH6tx2otovHiJi7WNOUmzPaEcj&_nc_ohc=sl5mNtYuuWUAX-tBqJe&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQM1zywWL_HGwJ45M8HbpAgVjiZoecRXtI38kYVNGKw-g&oe=6374D66B" alt="">
+                
+            </div><br> <hr>
+
+            <h1 class="headings">The Target Attribute</h1>
+            <div id="pic">
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/307225136_2358309894336752_6570930887819286673_n.png?_nc_cat=107&ccb=1-7&_nc_sid=aee45a&_nc_eui2=AeFIfCdBK2pkhfiTIuNL_VEjGxXm9V_KJmAbFeb1X8omYJBmCO0zVZAicMqH36v7nMfWi4UkbjuY779ORS0WDVC6&_nc_ohc=2Gxg93cm1G4AX9qGxoZ&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTePBsaoSYuwqpVbGlLZ0ooQLXz5maduRF-2NwcdvgW_A&oe=63748567" alt="">
+                
+            </div><br> <hr>
+        </div>
+    </section>
+       
+    
+</body>
+</html>
